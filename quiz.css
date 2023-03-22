@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#screen2,#screen3{
+    display: none;
+}
+
+.timer {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-radius: 50%;
+    background: #faa361;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.content {
+    width: 50vw;
+    text-align: center;
+    position: relative;
+}
+
+.qa {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
