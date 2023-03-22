@@ -41,7 +41,7 @@ let score = 0;
 startBtn.onclick = () => {
   screen1.style.display = "none";
   screen2.style.display = "flex";
-  questionTimer();
+  // questionTimer();
   printQuestion();
 };
 
