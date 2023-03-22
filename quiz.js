@@ -1,29 +1,29 @@
 const data = [
   {
-    question: "8 * 7",
+    question: "Q1. 8 * 7",
     answer: 56,
     options: [65, 56, 45, 98],
   },
   {
-    question: "9 * 4",
+    question: "Q2. 9 * 4",
     answer: 36,
     options: [87, 45, 23, 36],
   },
-  // {
-  //   question: "110 - 78",
-  //   answer: 32,
-  //   options: [32, 44, 31, 35],
-  // },
-  // {
-  //   question: "86 / 2",
-  //   answer: 43,
-  //   options: [41, 10, 22, 43],
-  // },
-  // {
-  //   question: "22 + 32",
-  //   answer: 54,
-  //   options: [34, 40, 62, 54],
-  // },
+  {
+    question: "Q3. 110 - 78",
+    answer: 32,
+    options: [32, 44, 31, 35],
+  },
+  {
+    question: "Q4. 86 / 2",
+    answer: 43,
+    options: [41, 10, 22, 43],
+  },
+  {
+    question: "Q5. 22 + 32",
+    answer: 54,
+    options: [34, 40, 62, 54],
+  },
 ];
 
 const startBtn = document.querySelector("#start");

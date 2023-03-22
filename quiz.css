@@ -69,11 +69,10 @@
     border: 2px solid white;
 }
 
-.qa {
-    padding: 2rem;
-    font-size: 1.2rem;
-    background-color: orange;
-    border-radius: 2rem;
+.content {
+    width: 40vw;
+    text-align: center;
+    position: relative;
 }
 
 .timer {
@@ -92,8 +91,10 @@
     color: white;
 }
 
-.content {
-    width: 50vw;
-    text-align: center;
-    position: relative;
+.qa {
+    padding: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    border-radius: 2rem;
 }
+
