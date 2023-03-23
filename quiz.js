@@ -9,21 +9,21 @@ const data = [
     answer: 36,
     options: [87, 45, 23, 36],
   },
-  {
-    question: "Q3. 110 - 78",
-    answer: 32,
-    options: [32, 44, 31, 35],
-  },
-  {
-    question: "Q4. 86 / 2",
-    answer: 43,
-    options: [41, 10, 22, 43],
-  },
-  {
-    question: "Q5. 22 + 32",
-    answer: 54,
-    options: [34, 40, 62, 54],
-  },
+  // {
+  //   question: "Q3. 110 - 78",
+  //   answer: 32,
+  //   options: [32, 44, 31, 35],
+  // },
+  // {
+  //   question: "Q4. 86 / 2",
+  //   answer: 43,
+  //   options: [41, 10, 22, 43],
+  // },
+  // {
+  //   question: "Q5. 22 + 32",
+  //   answer: 54,
+  //   options: [34, 40, 62, 54],
+  // },
 ];
 
 const startBtn = document.querySelector("#start");
@@ -41,7 +41,7 @@ let score = 0;
 startBtn.onclick = () => {
   screen1.style.display = "none";
   screen2.style.display = "flex";
-  // questionTimer();
+  questionTimer();
   printQuestion();
 };
 
@@ -81,15 +81,15 @@ function printQuestion() {
 }
 
 function checkAnswer() {
-  let checkboxes = document.querySelectorAll("input[type='checkbox']");
-  let selectedOption = [];
+  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  let selectedCheckbox = [];
   checkboxes.forEach((checkbox) => {
     if (checkbox.checked) {
-      selectedOption.push(checkbox.nextElementSibling.innerHTML);
+      selectedCheckbox.push(checkbox.nextElementSibling.innerHTML);
     }
   });
   const correctAnswer = data[currentQuestion].answer;
-  if (selectedOption.length === 1 && selectedOption[0] == correctAnswer) {
+  if (selectedCheckbox[0] == correctAnswer) {
     score++;
   }
   printQuestion();
